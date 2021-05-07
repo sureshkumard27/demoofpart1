@@ -1,0 +1,27 @@
+import React from 'react'
+
+const Hello = (props) => {
+  return (
+    <div>
+      <p>
+         {props.part}
+      </p>
+    </div>
+  )
+}
+
+const App = () => {
+  const part='part0'
+    return (
+    <div>
+      <h1>Greetings</h1>
+      <Hello part={part} />
+      <Hello part="part1" />
+      <Hello part="part2" />
+      <Hello part="part3" />
+      <Hello part="part4" />
+      <Hello part="part5" />          
+       </div>
+  )
+}
+export default App
